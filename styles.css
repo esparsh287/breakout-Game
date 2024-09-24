@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Score display */
+#score {
+  font-weight: bold;
+  font-size: 40px;
+  color: #FFD700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: color 0.3s ease;
+}
+
+#score.win {
+  color: limegreen;
+}
+
+#score.lose {
+  color: red;
+}
+
+/* Grid (game board) styling */
+.grid {
+  position: relative;
+  width: 560px;
+  height: 300px;
+  border: 3px solid #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #333333, #444444);
+  overflow: hidden;
+}
+
+/* Block styling */
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #3498db;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.block:hover {
+  background-color: #2980b9;
+}
+
+/* User paddle styling */
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 10px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.user:hover {
+  background-color: #c0392b;
+}
+
+/* Ball styling */
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s ease;
+}
+
+.ball:hover {
+  background-color: #27ae60;
+}
+
+/* Button styling */
+#start-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#start-btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+#start-btn:active {
+  background-color: #d35400;
+}
